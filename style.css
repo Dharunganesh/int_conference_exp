@@ -1,0 +1,674 @@
+/* ============================================
+   RESET & BASE STYLES
+   ============================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ============================================
+   HERO SECTION
+   ============================================ */
+
+.hero {
+    background: linear-gradient(135deg, #1e3a5f 0%, #2c5f7c 100%);
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+    position: relative;
+}
+
+.logo-container {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-60%);
+    z-index: 10;
+}
+
+.college-logo {
+    max-width: 150px;
+    max-height: 120px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.hero-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.college-name {
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-bottom: 30px;
+    opacity: 0.95;
+}
+
+.hero-details {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.hero-details p {
+    font-size: 1.1rem;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 12px 24px;
+    border-radius: 5px;
+}
+
+/* ============================================
+   SECTION STYLES
+   ============================================ */
+
+section {
+    padding: 60px 20px;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #1e3a5f;
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: #8b1538;
+}
+
+/* ============================================
+   ABOUT SECTION
+   ============================================ */
+
+.about {
+    background-color: #ffffff;
+}
+
+.about-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+    text-align: justify;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* ============================================
+   DEPARTMENTS SECTION
+   ============================================ */
+
+.departments {
+    background-color: #f8f9fa;
+}
+
+.departments-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.department-card {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.department-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.department-card h3 {
+    font-size: 1.3rem;
+    color: #1e3a5f;
+    font-weight: 600;
+}
+
+/* ============================================
+   THEMES SECTION
+   ============================================ */
+
+.themes {
+    background-color: #ffffff;
+}
+
+.themes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.theme-card {
+    background-color: #f8f9fa;
+    padding: 30px;
+    border-radius: 8px;
+    border-left: 4px solid #8b1538;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.theme-card h3 {
+    font-size: 1.4rem;
+    color: #1e3a5f;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.theme-card ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.theme-card ul li {
+    padding: 8px 0;
+    padding-left: 25px;
+    position: relative;
+    color: #555;
+}
+
+.theme-card ul li::before {
+    content: '▸';
+    position: absolute;
+    left: 0;
+    color: #8b1538;
+    font-weight: bold;
+}
+
+/* ============================================
+   IMPORTANT DATES SECTION
+   ============================================ */
+
+.important-dates {
+    background-color: #f8f9fa;
+}
+
+.dates-table {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.date-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #e0e0e0;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.date-item:last-child {
+    border-bottom: none;
+}
+
+.date-item.highlight {
+    background-color: #e8f4f8;
+    border-radius: 5px;
+    border: 2px solid #1e3a5f;
+}
+
+.date-label {
+    font-weight: 500;
+    color: #333;
+    font-size: 1.1rem;
+}
+
+.date-value {
+    font-weight: 600;
+    color: #1e3a5f;
+    font-size: 1.1rem;
+}
+
+/* ============================================
+   REGISTRATION SECTION
+   ============================================ */
+
+.registration {
+    background-color: #ffffff;
+}
+
+.registration-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.registration-fees {
+    background-color: #f8f9fa;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.registration-fees h3,
+.registration-form h3 {
+    font-size: 1.5rem;
+    color: #1e3a5f;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+.fees-table {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.fee-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    border-left: 3px solid #8b1538;
+}
+
+.fee-label {
+    font-weight: 500;
+    color: #333;
+}
+
+.fee-value {
+    font-weight: 600;
+    color: #1e3a5f;
+    font-size: 1.1rem;
+}
+
+.registration-form {
+    background-color: #f8f9fa;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.registration-form iframe {
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.form-note {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: #666;
+    text-align: center;
+}
+
+.form-note a {
+    color: #1e3a5f;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.form-note a:hover {
+    text-decoration: underline;
+}
+
+/* ============================================
+   PUBLICATION SECTION
+   ============================================ */
+
+.publication {
+    background-color: #f8f9fa;
+}
+
+.publication-content {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.publication-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+    text-align: justify;
+}
+
+/* ============================================
+   CONTACT SECTION
+   ============================================ */
+
+.contact {
+    background-color: #ffffff;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-card {
+    background-color: #f8f9fa;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-top: 4px solid #1e3a5f;
+}
+
+.contact-card h3 {
+    font-size: 1.3rem;
+    color: #1e3a5f;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.contact-card .designation {
+    font-weight: 500;
+    color: #8b1538;
+    margin-bottom: 10px;
+}
+
+.contact-card .department {
+    color: #666;
+    margin-bottom: 15px;
+    font-size: 0.95rem;
+}
+
+.contact-card .phone,
+.contact-card .email {
+    color: #555;
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+
+.contact-card .email {
+    word-break: break-word;
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
+
+.footer {
+    background-color: #1e3a5f;
+    color: white;
+    padding: 40px 20px;
+}
+
+.footer-content {
+    text-align: center;
+}
+
+.footer-info h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.footer-info p {
+    font-size: 1rem;
+    opacity: 0.9;
+    margin-bottom: 20px;
+}
+
+.footer-copyright {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer-copyright p {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+/* ============================================
+   RESPONSIVE DESIGN
+   ============================================ */
+
+/* Tablet */
+@media (max-width: 968px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .college-name {
+        font-size: 1.1rem;
+    }
+    
+    .hero-details {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .registration-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .section-title {
+        font-size: 1.7rem;
+    }
+    
+    .logo-container {
+        top: 15px;
+        left: 15px;
+    }
+    
+    .college-logo {
+        max-width: 120px;
+        max-height: 100px;
+        padding: 8px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .hero {
+        padding: 80px 20px 40px 20px;
+    }
+    
+    /* Logo - Mobile: Centered with proper spacing */
+    .logo-container {
+        position: absolute;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        margin-bottom: 0;
+    }
+    
+    .college-logo {
+        max-width: 100px;
+        max-height: 80px;
+        padding: 6px;
+    }
+    
+    .hero-title {
+        font-size: 1.7rem;
+        margin-top: 30px;
+    }
+    
+    .college-name {
+        font-size: 1rem;
+    }
+    
+    .hero-details p {
+        font-size: 0.95rem;
+        padding: 10px 20px;
+    }
+    
+    section {
+        padding: 40px 20px;
+    }
+    
+    .section-title {
+        font-size: 1.5rem;
+    }
+    
+    .about-text,
+    .publication-text {
+        font-size: 1rem;
+        text-align: left;
+    }
+    
+    /* Organising Departments - Mobile: 2×2 grid */
+    .departments-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+    
+    .department-card {
+        padding: 20px;
+    }
+    
+    .department-card h3 {
+        font-size: 1.1rem;
+    }
+    
+    .themes-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .date-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .date-label,
+    .date-value {
+        font-size: 1rem;
+    }
+    
+    /* Registration Fees - Mobile: Side by side (2 columns) */
+    .fees-table {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+    
+    .fee-item {
+        flex-direction: column;
+        gap: 8px;
+        align-items: flex-start;
+        padding: 12px;
+        text-align: left;
+    }
+    
+    .fee-label {
+        font-size: 0.9rem;
+    }
+    
+    .fee-value {
+        font-size: 1rem;
+    }
+    
+    /* Contact Details - Mobile: 2×2 grid */
+    .contact-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+    
+    .contact-card {
+        padding: 20px;
+    }
+    
+    .contact-card h3 {
+        font-size: 1.1rem;
+        margin-bottom: 10px;
+    }
+    
+    .contact-card .designation {
+        font-size: 0.9rem;
+        margin-bottom: 8px;
+    }
+    
+    .contact-card .department {
+        font-size: 0.85rem;
+        margin-bottom: 10px;
+    }
+    
+    .contact-card .phone,
+    .contact-card .email {
+        font-size: 0.85rem;
+        margin-bottom: 5px;
+    }
+    
+    .registration-form iframe {
+        height: 500px;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+    .college-logo {
+        max-width: 80px;
+        max-height: 65px;
+        padding: 5px;
+    }
+    
+    .hero-title {
+        font-size: 1.4rem;
+    }
+    
+    .college-name {
+        font-size: 0.9rem;
+    }
+    
+    .section-title {
+        font-size: 1.3rem;
+    }
+    
+    .dates-table,
+    .publication-content {
+        padding: 20px;
+    }
+    
+    .registration-fees,
+    .registration-form {
+        padding: 20px;
+    }
+}
+
