@@ -611,21 +611,21 @@ section {
         min-height: auto;
     }
     
-    /* Logo - Mobile: Normal flow, centered, reduced gap */
+    /* Logo - Mobile: Normal flow, centered, reduced gap, increased size */
     .logo-container {
         position: relative;
         top: 0;
         left: 0;
         transform: none;
         text-align: center;
-        margin-bottom: 10px;
-        padding-top: 0;
+        margin-bottom: 8px;
+        padding: 0;
     }
     
     .college-logo {
-        max-width: 130px;
-        max-height: 105px;
-        padding: 8px;
+        max-width: 140px;
+        max-height: 115px;
+        padding: 6px;
     }
     
     .hero-title {
@@ -639,7 +639,7 @@ section {
         margin-bottom: 20px;
     }
     
-    /* Date & Venue - Mobile: Side by side (2 columns) */
+    /* Date & Venue - Mobile: Side by side (2 columns), centered content */
     .hero-details {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -650,8 +650,14 @@ section {
     
     .hero-details p {
         font-size: 0.9rem;
-        padding: 10px 12px;
+        padding: 12px 10px;
         margin: 0;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 60px;
     }
     
     section {
