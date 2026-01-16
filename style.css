@@ -730,6 +730,7 @@ section {
     
     .theme-preview-card ul li {
         padding: 5px 0;
+        padding-left: 22px;
         font-size: 0.85rem;
     }
     
