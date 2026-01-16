@@ -713,8 +713,24 @@ section {
         font-size: 1.1rem;
     }
     
+    /* Call for Papers - Mobile: Maintain 2-column grid */
     .themes-preview-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+    
+    .theme-preview-card {
+        padding: 18px;
+    }
+    
+    .theme-preview-card h3 {
+        font-size: 1.1rem;
+        margin-bottom: 12px;
+    }
+    
+    .theme-preview-card ul li {
+        padding: 5px 0;
+        font-size: 0.85rem;
     }
     
     .themes-grid {
